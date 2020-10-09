@@ -1,0 +1,14 @@
+{
+  "name": "spec-up-template",
+  "version": "0.0.1",
+  "description": "Spec-up template and testing repo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csuwildcat/spec-test.git"
+  },
+  "author": "Daniel Buchner",
+  "license": "Apache 2",
+  "dependencies": {
+    "spec-up": "0.9.98"
+  }
+}
