@@ -19,6 +19,12 @@ jobs:
         run: |
           npm install
           node -e "require('spec-up')({ nowatch: true })"
+
+      - name: Wait for 10 seconds
+          uses: jakejarvis/wait-action@master
+          with:
+            time: '10s'
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
