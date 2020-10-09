@@ -35,6 +35,7 @@ Using Spec-Up is easy peasy lemon squeezy:
 
 Boom! That's it. Spec-Up will auto-detect modifications to files in your `spec_directory` and auto-generate your spec's updated HTML document every time you save a change.
 
+
 ## Table of Contents
 
 <-- You see that beautiful TOC over there to your left? (tap the header link to slide it out on mobile) Yeah, you don't need to do a damn thing, that just magically appears based on your use of `h2`, `h3`, and `h4` headings.
