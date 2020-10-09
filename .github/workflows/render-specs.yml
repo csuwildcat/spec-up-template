@@ -18,11 +18,11 @@ jobs:
         run: |
           npm install
       - name: Render
-          run: |
-            node -e "require('spec-up')({ nowatch: true }); setTimeout(() => {}, 5000)"
+        run: |
+          node -e "require('spec-up')({ nowatch: true }); setTimeout(() => {}, 5000)"
       - name: Wait
-          run: |
-            node -e "setTimeout(() => {}, 1000)"
+        run: |
+          node -e "setTimeout(() => {}, 1000)"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
