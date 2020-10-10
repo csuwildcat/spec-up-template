@@ -1,7 +1,7 @@
 Spec-Up 456
 ==================
 
-**Specification Status:** Strawman
+**Specification Status:** Strawmen
 
 **Latest Draft:**
   [https://csuwildcat.github.io/spec-up](https://csuwildcat.github.io/spec-up)
