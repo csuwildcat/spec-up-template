@@ -19,11 +19,7 @@ jobs:
       - name: Install and Render
         run: |
           npm install
-          npm run render
-
-      - name: Render
-        run: |
-          npm run render
+          node -e "require('spec-up')({ nowatch: true })"
 
       - name: Get file changes
         id: get_file_changes
