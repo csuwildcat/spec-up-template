@@ -19,10 +19,10 @@ jobs:
           npm install
       - name: Render
         run: |
-          node -e "require('spec-up')({ nowatch: true }); setTimeout(() => {}, 5000)"
+          node -e "require('spec-up')({ nowatch: true });"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
+          BRANCH: main
           FOLDER: .
