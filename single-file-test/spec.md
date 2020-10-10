@@ -1,4 +1,4 @@
-Spec-Up 0987654321
+Spec-Up 123
 ==================
 
 **Specification Status:** Strawman
