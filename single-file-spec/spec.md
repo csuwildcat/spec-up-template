@@ -1,7 +1,7 @@
-Spec-Up 456
+Spec-Up Example
 ==================
 
-**Specification Status:** Strawmen
+**Specification Status:** Strawman
 
 **Latest Draft:**
   [https://csuwildcat.github.io/spec-up](https://csuwildcat.github.io/spec-up)
