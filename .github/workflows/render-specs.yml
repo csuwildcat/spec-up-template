@@ -19,11 +19,7 @@ jobs:
       - name: Install and Render
         run: |
           npm install
-          node -e "require('spec-up')({ nowatch: true })"
-
-      - name: show changes
-        run: |
-          git status
+          node -e "require('spec-up')()"
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
