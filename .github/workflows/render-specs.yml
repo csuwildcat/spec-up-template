@@ -9,19 +9,16 @@ on:
 jobs:
   build-and-deploy-spec:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
-    if: always()
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
-          fetch-depth: 2
           persist-credentials: false
 
       - name: Install and Render
         run: |
           npm install
-          node -e "require('spec-up')()"
+          node -e "setTimeout(() => require('child_process').exec('killall -9 node', () => process.exit(0)), 5000); require('spec-up')()"
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
