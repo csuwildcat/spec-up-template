@@ -19,7 +19,7 @@ jobs:
           npm install
       - name: Render
         run: |
-          node -e "require('spec-up')({ nowatch: true });"
+          node -e "require('spec-up')({ nowatch: true }); setTimeout(() => {}, 5000)"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
