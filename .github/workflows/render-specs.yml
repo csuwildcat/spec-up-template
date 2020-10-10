@@ -16,14 +16,14 @@ jobs:
           persist-credentials: false
           ref: ${{ github.head_ref }}
 
-      - name: Install and Render 1
+      - name: Install and Render
         run: |
           npm install
-          node -e "require('spec-up')({ nowatch: true })"
+          npm run render
 
-      - name: Install and Render 2
+      - name: Render
         run: |
-          node -e "require('spec-up')({ nowatch: true })"
+          npm run render
 
       - name: Get file changes
         id: get_file_changes
