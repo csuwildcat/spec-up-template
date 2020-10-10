@@ -1,7 +1,7 @@
-Spec-Up Example TESTING 999
+Spec-Up Example 1
 ==================
 
-**Specification Status:** Straw
+**Specification Status:** Strawman
 
 **Latest Draft:**
   [https://csuwildcat.github.io/spec-up](https://csuwildcat.github.io/spec-up)
