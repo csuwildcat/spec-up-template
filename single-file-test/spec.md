@@ -1,4 +1,4 @@
-Spec-Up Example TESTING 0987654321
+Spec-Up Example TESTING 123
 ==================
 
 **Specification Status:** Strawman

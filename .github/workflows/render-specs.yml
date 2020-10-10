@@ -18,6 +18,16 @@ jobs:
         run: |
           npm install
           node -e "require('spec-up')({ nowatch: true }); setTimeout(() => {}, 5000)"
+
+      - name: Get file changes
+        id: get_file_changes
+        uses: dorner/file-changes-action@v1.2.0
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          plaintext: true
+      - name: Echo file changes
+        run: |
+          echo Changed files: ${{ steps.get_file_changes.outputs.files }}
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:

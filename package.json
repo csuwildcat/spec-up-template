@@ -9,7 +9,7 @@
   "author": "Daniel Buchner",
   "license": "Apache 2",
   "dependencies": {
-    "spec-up": "0.9.100"
+    "spec-up": "0.9.101"
   },
   "scripts": {
     "edit": "node -e \"require('spec-up')()\"",
