@@ -1,4 +1,4 @@
-Spec-Up Example 123
+Spec-Up Examples
 ==================
 
 **Specification Status:** Strawman

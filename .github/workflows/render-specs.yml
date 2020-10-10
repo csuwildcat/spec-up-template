@@ -17,6 +17,8 @@ jobs:
           persist-credentials: false
 
       - name: Install and Render
+        if: always()
+        timeout-minutes: 0.1
         run: |
           npm install
           node -e "require('spec-up')()"
