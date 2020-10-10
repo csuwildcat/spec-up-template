@@ -16,9 +16,13 @@ jobs:
           persist-credentials: false
           ref: ${{ github.head_ref }}
 
-      - name: Install and Render
+      - name: Install and Render 1
         run: |
           npm install
+          node -e "require('spec-up')({ nowatch: true })"
+
+      - name: Install and Render 2
+        run: |
           node -e "require('spec-up')({ nowatch: true })"
 
       - name: Get file changes
@@ -31,7 +35,7 @@ jobs:
       - name: Echo file changes
         run: |
           echo Changed files: ${{ steps.get_file_changes.outputs.files }}
-          
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
