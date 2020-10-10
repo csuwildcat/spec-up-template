@@ -1,7 +1,7 @@
 {
   "name": "spec-up-template",
   "version": "0.0.1",
-  "description": "Spec-up template and testing repo",
+  "description": "Spec-up template repo",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/csuwildcat/spec-test.git"

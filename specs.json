@@ -2,7 +2,8 @@
   "specs": [
     {
       "title": "Spec-Up Example",
-      "spec_directory": "./single-file-test",
+      "logo": "https://ghcdn.rawgit.org/csuwildcat/spec-up/master/logo.png",
+      "spec_directory": "./single-file-spec",
       "output_path": "./",
       "source": {
         "host": "github",
@@ -12,7 +13,8 @@
     },
     {
       "title": "Spec-Up Multi-File Example",
-      "spec_directory": "./multi-file-test",
+      "logo": "https://ghcdn.rawgit.org/csuwildcat/spec-up/master/logo.png",
+      "spec_directory": "./multi-file-spec",
       "markdown_paths": [
         "header.md",
         "abstract.md",
