@@ -14,11 +14,9 @@ jobs:
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
           persist-credentials: false
-      - name: Install
+      - name: Install and Render
         run: |
           npm install
-      - name: Render
-        run: |
           node -e "require('spec-up')({ nowatch: true }); setTimeout(() => {}, 5000)"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
