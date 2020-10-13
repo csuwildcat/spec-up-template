@@ -5,7 +5,7 @@ This is a template repo that allows you to quickly begin creating a spec with Sp
 1. Clone the repo
 2. Run `npm install`
 3. Run `npm run edit`
-4. Begin editing, and the tool with auto-generate your specs
+4. Begin editing, and the tool will auto-generate your specs
 
 NOTE: you may want to run something like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for VS Code, the [Serve](https://www.npmjs.com/package/serve) Node.js package, or another auto-refreshing local file server to more easily view your rendered specs without having to manually refresh in your browser.
 
