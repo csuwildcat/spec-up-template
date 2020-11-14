@@ -17,7 +17,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          node -e "require('./index')({ nowatch: true })"
+          node -e "require('spec-up')({ nowatch: true })"
           rm -rf node_modules
 
       - name: Deploy
